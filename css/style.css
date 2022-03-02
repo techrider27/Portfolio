@@ -7,6 +7,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     text-decoration: none;
     overflow-x: hidden;
@@ -80,12 +81,12 @@ body {
 
 /* -------.intro-section----------*/
 .intro-section {
-    width: 100%;
-    height: 622px;
+    height: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../images/section-intro.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 30px;
 }
 
 .container {
@@ -147,6 +148,7 @@ body {
     font-size: 38px;
     font-family: monospace;
 }
+
 .about-h2::after {
     content: "";
     position: absolute;
@@ -194,7 +196,7 @@ body {
     font-family: 'Baloo Bhai 2', cursive;
     font-size: 26px;
     font-weight: lighter;
-    line-height: 35px;
+    line-height: 25px;
 }
 
 .social-resume {
@@ -222,7 +224,6 @@ body {
 
 /* -------my-education-------*/
 .my-education {
-    width: 100%;
     height: auto;
     margin: 0;
     background-color: #fdf6f0;
@@ -275,7 +276,10 @@ body {
 
 .my-education-child h2,
 .my-education-child h3,
-.my-education-child p {
+.my-education-child p,
+.my-education-child-1 h2,
+.my-education-child-1 h3,
+.my-education-child-1 p {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px;
@@ -310,14 +314,6 @@ body {
 .my-education-child-1 a:hover {
     text-decoration: underline black;
     color: teal;
-}
-
-.my-education-child-1 h2,
-.my-education-child-1 h3,
-.my-education-child-1 p {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 5px;
 }
 
 /* ----------------skills-------------*/
@@ -553,24 +549,53 @@ body {
     }
 
     .container .child-1 h2 {
-        font-size: 3rem;
+        font-size: 1.5rem;
         font-weight: 500;
     }
 
     .container .child-1 p {
-        font-size: 2rem;
+        font-size: 1rem;
         color: white;
+    }
+
+    .about-h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-h2::after {
+        margin: 30px 0 0 0;
+    }
+
+    #hi {
+        font-size: 1.5rem;
     }
 
     .about-me-child-1 p {
         text-align: justify;
-        font-size: 24px;
+        font-size: 1rem;
     }
 
     .social-resume {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: unset;
+    }
+
+    .social-resume a {
+        font-size: 1rem;
+    }
+
+    .my-education-child h2,
+    .my-education-child h3,
+    .my-education-child p,
+    .my-education-child-1 h2,
+    .my-education-child-1 h3,
+    .my-education-child-1 p {
+        font-size: 1rem;
+    }
+
+    .skills-child h2 {
+        font-size: 1rem;
     }
 }
 
